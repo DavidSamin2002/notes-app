@@ -55,7 +55,7 @@ function Notes() {
   };
   const onSearch = (value) => {
   
-    debugger
+    
    
     if(!value){
       setNotes(notesSearch) 
@@ -65,7 +65,7 @@ function Notes() {
    
    const arr = notes.filter((note) => note.text.includes(value) );
     setNotes(arr)
-    // console.log("חיפוש:", searchTerm); // כאן תוכל להשתמש בחיפוש באופן מתאים
+    
 }
   //apply the save and get functions using useEffect
   //get the saved notes and add them to the array
