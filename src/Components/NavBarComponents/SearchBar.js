@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../css/SearchBar.css"; // קובץ עם עיצוב השורת חיפוש
+import "../css/SearchBar.css";
 
 function SearchBar({ onSearch }) {
   const [searchTerm, setSearchTerm] = useState("");
@@ -18,11 +18,8 @@ function SearchBar({ onSearch }) {
         className="search-input"
         placeholder=" Search Note.."
         value={searchTerm}
-        // onInput={(e) => {setSearchTerm(e.target.value)}}
       />
-      {/* <button className="search-button" onClick={handleSearch}>
-        Search 
-      </button> */}
+      
     </div>
   );
 }
